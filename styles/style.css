@@ -21,7 +21,6 @@
 }
 
 body {
-    font-family: ;
     line-height: 1.6;
     color: var(--dark-text);
     background-color: var(--light-bg);
@@ -139,11 +138,11 @@ ul {
     font-style: black;
     font-weight: 700;
     color: var(--primary-blue);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .banner-content {
-    margin-top: -10px;
+    margin-top: -50px;
     z-index: 1;
 }
 
@@ -205,4 +204,48 @@ ul {
     line-height: 1.5;
 }
 
+/* Productive Users Section styles */
 
+.productive-users-section {
+    background-color: #ddddfa;
+    padding: 90px ;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 20px auto 50px auto; 
+    max-width: 900px;
+    position: relative; 
+    z-index: 2; 
+}
+
+.productive-users-section h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 150px; 
+}
+
+.stat-number {
+    font-size: 80px;
+    font-weight: bold;
+    color: #4E47FF;
+    margin-bottom: auto;
+}
+
+.stat-label {
+    font-size: 20px;
+    color: #000000;
+}
