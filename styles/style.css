@@ -1,4 +1,4 @@
-.inter-normal{
+.inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -21,6 +21,7 @@
 }
 
 body {
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
     background-color: var(--light-bg);
@@ -45,7 +46,6 @@ ul {
     list-style: none;
 }
 
-
 .btn {
     padding: 15px 30px;
     border: none;
@@ -59,7 +59,6 @@ ul {
 .btn-primary {
     background-color: #424242;
     color: #e9ecef;
-    
 }
 
 .btn-primary:hover {
@@ -69,13 +68,12 @@ ul {
 .btn-secondary {
     background-color: transparent;
     color: var(--primary-blue);
-    border: 1px solid #4E47FF);
+    border: 1px solid #4E47FF;
 }
 
 .btn-secondary:hover {
     background-color: rgba(250, 250, 250, 0.1);
 }
-
 
 .sr-only {
     position: absolute;
@@ -89,74 +87,39 @@ ul {
     border-width: 0;
 }
 
-
-
-
-
-/* banner section style */
-.banner-section {
-    background-color: #F5F8FF
-    padding: 25px;
-    text-align: center;
-    position: relative;
-    overflow: hidden; 
-    min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+/* header section */
+.header-bg {
+  background-image: url(../Assets/Hero-bg.png);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 240px;
+  padding: 52px;
+}
+.logo {
+  font-weight: 900;
+  font-size: 34px;
+  color: #4e47ff;
 }
 
-
-
-/* Background Pattern for Banner Section */
-.banner-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/Assets/Hero-bg.png');
-    /* background-size: 1140px 698px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    z-index: 0; 
+.head-body {
+  display: flex;
+  justify-content: center;
+}
+.head-title {
+  margin-top: 158px;
+  font-size: 65px;
+  font-weight: bold;
+  text-align: center;
 }
 
-
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; 
-    padding: 30px 20px; 
-    z-index: 1;
+.head-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+  padding-bottom: 152px;
 }
-
-.navbar .logo {
-    font-size: 34px;
-    font-style: black;
-    font-weight: 700;
-    color: #4E47FF;
-    letter-spacing: 2px;
-}
-
-.banner-content {
-    margin-top: -50px;
-    z-index: 1;
-    padding-top: 40px;  
-    padding-bottom: 200px;
-}
-
-.banner-content h1 {
-    font-size: 65px;
-    line-height: 1.4;
-    margin-bottom: 30px;
-}
-
 /* Action Section Styles */
 .action-section {
     display: flex;
@@ -196,7 +159,7 @@ ul {
 }
 
 .action-image {
-    max-width: 403px 328px ;
+    max-width: 100%;
     height: auto;
     border-radius: 10px; 
     display: block;
@@ -209,11 +172,10 @@ ul {
     line-height: 1.5;
 }
 
-/* Productive Users Section styles */
-
+/* Productive Users Section Styles */
 .productive-users-section {
     background-color: #ddddfa;
-    padding: 90px ;
+    padding: 90px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -247,7 +209,7 @@ ul {
     font-size: 80px;
     font-weight: bold;
     color: #4E47FF;
-    margin-bottom: auto;
+    margin-bottom: 10px;
 }
 
 .stat-label {
@@ -256,9 +218,9 @@ ul {
 }
 
 /* Reviews Section Styles */
-
 .reviews-section {
     text-align: center;
+    padding: var(--section-padding);
 }
 
 .reviews-section h2 {
@@ -275,7 +237,7 @@ ul {
 }
 
 .review-card {
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(122, 122, 122, 0.05);
@@ -307,30 +269,27 @@ ul {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 4px;
-    Line height: 0.8px;
+    margin-top: 20px;
+    line-height: 1;
 }
 
 .reviewer-avatar {
     width: 50px;
     height: 50px;
-    margin-top: -10px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .reviewer-name {
     font-weight: 600;
-    margin-bottom: 1px;
-    gap: -10px;
     color: #000000;
 }
 
 .review-date {
-    font-size: 10px;
-    margin-top: -10px;
+    font-size: 14px;
     color: #000000;
 }
+
 /* Focus Better Section */
 .focus-better-section {
     padding: 30px;
@@ -370,47 +329,14 @@ ul {
 }
 
 .webflow-conf-preview .preview-image {
-    width: 100%;
+    width: calc(100% - 20px);
     height: auto;
     display: block;
     border-radius: 15px;
     margin: 10px; 
-    width: calc(100% - 20px);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-    .focus-better-section h2 {
-        font-size: 38px;
-    }
-}
-
-@media (max-width: 768px) {
-    .focus-better-section {
-        padding: 60px 20px;
-    }
-    .focus-better-section h2 {
-        font-size: 32px;
-    }
-    .focus-better-section .subtitle {
-        font-size: 16px;
-    }
-    .webflow-conf-preview .preview-image {
-        margin: 5px; 
-        width: calc(100% - 10px);
-    }
-}
-
-@media (max-width: 480px) {
-    .focus-better-section h2 {
-        font-size: 28px;
-    }
-    .focus-better-section .btn-primary {
-        margin-bottom: 30px;
-    }
-}
-
-/* News latter section styles  */
+/* Newsletter Section Styles */
 .newsletter-section {
     display: flex;
     justify-content: center;
@@ -436,8 +362,9 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    min-width: 800px;
-    max-width: 800px;
+    min-width: 300px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .form-group input,
@@ -453,7 +380,7 @@ ul {
 
 .form-group input:focus,
 .form-group textarea:focus {
-border-color: #4E47FF;
+    border-color: #4E47FF;
 }
 
 .contact-form textarea {
@@ -461,16 +388,16 @@ border-color: #4E47FF;
     min-height: 200px;
 }
 
-/* Footer section styles */
+/* Footer Section Styles */
 .main-footer {
     background-color: #F5F8FF;
-    padding: 10px;
+    padding: 60px 10px;
     text-align: center;
     border-top: 1px solid #e9ecef; 
 }
 
 .footer-logo {
-    font-size: 100px;
+    font-size: 36px;
     color: #4E47FF;
     margin-bottom: 20px;
     font-weight: 800;
@@ -489,6 +416,7 @@ border-color: #4E47FF;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .footer-nav a {
@@ -500,4 +428,3 @@ border-color: #4E47FF;
 .footer-nav a:hover {
     color: #4E47FF;
 }
-
