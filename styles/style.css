@@ -137,13 +137,15 @@ ul {
     font-size: 34px;
     font-style: black;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: #4E47FF;
     letter-spacing: 2px;
 }
 
 .banner-content {
     margin-top: -50px;
     z-index: 1;
+    padding-top: 40px;  
+    padding-bottom: 200px;
 }
 
 .banner-content h1 {
@@ -158,8 +160,8 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    padding: var(--section-padding);
-    background-color: var(--light-bg);
+    padding: 100px;
+    background-color: #f4f3ff;
     flex-wrap: wrap; 
 }
 
@@ -176,7 +178,7 @@ ul {
 
 .action-content p {
     font-size: 18px;
-    color: var(--light-text);
+    color: #424242;
     margin-bottom: 30px;
 }
 
@@ -423,9 +425,9 @@ ul {
 }
 
 .contact-form {
-    background-color: var(--white);
+    background-color: #FFFFFF;
     padding: 40px;
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
@@ -439,7 +441,7 @@ ul {
     width: 100%;
     padding: 15px;
     border: 1px solid #ced4da;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
@@ -447,7 +449,7 @@ ul {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--primary-blue);
+border-color: #4E47FF;
 }
 
 .contact-form textarea {
