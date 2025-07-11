@@ -249,3 +249,160 @@ ul {
     font-size: 20px;
     color: #000000;
 }
+
+/* Reviews Section Styles */
+
+.reviews-section {
+    text-align: center;
+}
+
+.reviews-section h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color:#FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(122, 122, 122, 0.05);
+    text-align: left;
+}
+
+.review-card .stars {
+    margin-bottom: 15px;
+    color: #FFC107;
+    font-size: 20px;
+}
+
+.review-card .star {
+    margin-right: 2px;
+}
+
+.review-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 4px;
+    Line height: 0.8px;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #000000;
+}
+
+.review-date {
+    font-size: 10px;
+    margin-top: 0;
+    color: #000000;
+}
+/* Focus Better Section */
+.focus-better-section {
+    background-color: #FFFFFF; 
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.focus-better-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.focus-better-section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.focus-better-section .subtitle {
+    font-size: 15px;
+    color: #242424; 
+    margin-bottom: 10px;
+}
+
+.focus-better-section .btn-primary {
+    margin-bottom: 60px; 
+}
+
+.webflow-conf-preview {
+    background-color: #1a1a1a; 
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.webflow-conf-preview .preview-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    margin: 10px; 
+    width: calc(100% - 20px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .focus-better-section h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .focus-better-section {
+        padding: 60px 20px;
+    }
+    .focus-better-section h2 {
+        font-size: 32px;
+    }
+    .focus-better-section .subtitle {
+        font-size: 16px;
+    }
+    .webflow-conf-preview .preview-image {
+        margin: 5px; 
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .focus-better-section h2 {
+        font-size: 28px;
+    }
+    .focus-better-section .btn-primary {
+        margin-bottom: 30px;
+    }
+}
+
+
+
