@@ -237,7 +237,7 @@ nav {
 }
 
 .review-card {
-    background-color: #FFFFFF;
+    background-color: #f4f3ff;;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(122, 122, 122, 0.05);
@@ -414,15 +414,15 @@ nav {
 .footer-nav ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    padding: 15px;
 }
 
 .footer-nav a {
     color: #8987A1;
     font-weight: 500;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .footer-nav a:hover {
